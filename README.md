@@ -20,8 +20,9 @@ Create a portfolio within a responsive, stylish and functional website while con
 4. Go to project directory in npm and use http-server command in the terminal to launch it (Check for the ip given in the terminal)
 
 ### Authors: 
-Santiago Felipe Múnera Dávila 
-  Links:
+Santiago Felipe Múnera Dávila
+
+#### Links:
 - https://sfmunera10.github.io/
 - https://docs.google.com/presentation/d/1V0SyWVR3p4_uv-vOOTBcPOKJAaiqAnw-g7DwL1a6Cp8/edit#slide=id.p
 
