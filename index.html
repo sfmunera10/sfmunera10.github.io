@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" , user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0>
+    <meta name="description" content="A personal website made for learning purposes.">
+    <meta name="author" content="Santiago Múnera">
+    <meta name="application-name" content="santiago-munera">
+    <title>Santiago's Website</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+    <link href="./css/loaders.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="icon" href="img/favicon.ico">
+</head>
+
+<body onload="myFunction()">
+    <div id="preloader">
+        <div class="loader">
+            <div class="loader-inner cube-transition">
+            </div><span class="tooltip">
+      <p>cube-transition</p></span>
+        </div>
+    </div>
+    <div style="display:none;" id="main_div" class="animate-bottom">
+        <div class="container-fluid">
+            <div class="row">
+                <img class="col-xs-12" src="./img/space.svg" alt="svg art piece of outer space">
+            </div>
+                <div class="row outer"></div>
+            </div>
+            <div id="welcome_panel" class="container">
+                <h1>Hello World!</h1>
+                <p>My name is <b>Santiago Múnera</b> and I'm glad that you can see a glimpse of what I am and what I do by just staring at this website. You can get to know me currently as a computer and systems engineer student at La Universidad De Los Andes, located in Bogotá, Colombia.</p>
+                <br>
+                <p>To start, just press the green button... Then, explore!:</p>
+                <br>
+                <a href="home.html">
+                <button id="btn_go" class="center-block"><b>Go!</b></button>
+                </a>
+            </div>
+            <img id="santiago" src="./img/santiago.svg" alt="svg art piece of myself">
+            <div id="visitor_count">Welcome to my website!</div>
+        </div>
+        <script src="./js/jquery.js"></script>
+        <script src="./js/loaders.css.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script>
+        'use strict';
+
+        let n = localStorage.getItem('on_load_counter');
+
+        if (n === null) {
+            n = 0;
+        }
+        n++;
+
+        localStorage.setItem("on_load_counter", n);
+        
+        let preloadVar;
+        let speechVar;
+
+        function myFunction() {
+            preloadVar = setTimeout(showPage, 2000);
+            speechVar = setTimeout(speak, 5000);
+        }
+
+        function showPage() {
+            document.getElementById("preloader").style.display = "none";
+            document.getElementById("main_div").style.display = "block";
+        }
+
+        function speak() {
+            document.getElementById("visitor_count").style.display = "block";
+            window.setTimeout(function() {
+                document.getElementById("visitor_count").innerHTML = "Number of visits: " + n + "!";
+            }, 3000);
+        }
+        </script>
+</body>
+
+</html>
