@@ -26,7 +26,7 @@ Santiago Felipe Múnera Dávila
 - https://docs.google.com/presentation/d/1V0SyWVR3p4_uv-vOOTBcPOKJAaiqAnw-g7DwL1a6Cp8/edit#slide=id.p
 
 ### Little preview of the site:
-![Screenshot](screenshots/screenshot.png)
+![Screenshot](screenshots/screenshot.JPG)
 
 MIT License
 
