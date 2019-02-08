@@ -13,7 +13,7 @@ Create a portfolio within a responsive, stylish and functional website while con
 - Javascript: controller for API endpoint calls
 - loaders.css: pure css animations open source project.
 
-### How to run the site on you local system
+### How to run the site on your local system
 1. Fork or clone the repository
 2. Install npm 
 3. Add npm's quick server through: npm install http-server
